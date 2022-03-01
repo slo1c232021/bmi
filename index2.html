@@ -1,0 +1,48 @@
+
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+    <meta charset="utf-8"/>
+    <title>BMI</title>
+
+    <script>
+    function bmi(){
+        var wzrost=parseFloat(document.getElementById("w").value)
+        var masa=parseFloat(document.getElementById("m").value)
+        var bmi=masa/(wzrost*wzrost);
+        var userBMI=document.getElementById("bmi_index");
+        userBMI.textContent=bmi.toFixed(2);
+
+    }
+</script>
+
+<link rel="stylesheet" href="styleb.css" type="text/css" />
+  
+
+</head>
+
+<body>   
+    
+
+    <h1 id="h1">Sprawdź swoje bmi</h1>
+    
+        
+     wzrost w m<input type="text" id="w"></br>
+     masa  w kg  <input type=text id="m">
+    <input type="button" value="Oblicz" onclick="bmi()">
+	
+    <h2 > Twoje BMI wynosi=<b id="bmi_index"></b></h2>
+      
+     
+   
+
+    
+        <img src="bmiobraz.jpg">
+    
+
+
+
+
+
+</body>
+</html> 
